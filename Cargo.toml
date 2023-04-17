@@ -3,6 +3,9 @@ name = "zero2prod"
 version = "0.1.0"
 edition = "2021"
 
+[registries.crates-io]
+protocol = "sparse"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
@@ -25,6 +28,7 @@ tracing-bunyan-formatter = "0.3"
 tracing-log = "0.1.1"
 secrecy = { version = "0.8", features = ["serde"] }
 tracing-actix-web = "0.5"
+serde-aux = "4"
 
 [dev-dependencies]
 reqwest = { version = "0.11", features = ["json"] }
